@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { injectGlobal, ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 import "../../node_modules/normalize.css/normalize.css";
 
@@ -15,7 +15,7 @@ import Footer from "./Footer";
 
 const currentTheme = THEME.default;
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${currentTheme.background.color};
     color: ${currentTheme.text.color};
@@ -41,6 +41,7 @@ const Layout = ({ children, title }) => (
         <Footer links={FOOTER_LINKS} />
       </Container>
     </ThemeProvider>
+    <GlobalStyle />
   </>
 );
 
