@@ -6,6 +6,6 @@ module.exports = {
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
-    { resolve: "gatsby-plugin-stylelint", options: { files: ["**/*.js*"] } }
+    "gatsby-plugin-stylelint"
   ]
 };
