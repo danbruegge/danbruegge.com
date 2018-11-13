@@ -23,7 +23,7 @@ Navigation.propTypes = {
       url: PropTypes.string
     })
   ).isRequired,
-  linkElement: PropTypes.element
+  linkElement: PropTypes.func
 };
 
 Navigation.defaultProps = {

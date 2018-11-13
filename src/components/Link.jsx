@@ -1,25 +1,24 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
-const StyledLink = styled(GatsbyLink)`
+const StyledLink = styled.a`
   color: ${props => props.theme.link.color};
 `;
 
-const StyledAnchor = StyledLink.withComponent("a");
-
-const Link = ({ children, to, ...props }) => {
+const Link = ({ to, ...oldProps }) => {
   const isInternal = /^\/(?!\/)/.test(to);
+  const props = {
+    ...oldProps,
+    [isInternal ? "to" : "href"]: to
+  };
 
-  return isInternal ? (
-    <StyledLink to={to} {...props}>
-      {children}
-    </StyledLink>
-  ) : (
-    <StyledAnchor href={to} {...props}>
-      {children}
-    </StyledAnchor>
-  );
+  return <StyledLink as={isInternal && GatsbyLink} {...props} />;
+};
+
+Link.propTypes = {
+  to: PropTypes.string.isRequired
 };
 
 export default Link;
