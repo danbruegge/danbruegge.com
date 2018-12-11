@@ -1,7 +1,7 @@
 export const HEADER_LINKS = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
-  { name: "CV", url: "/cv" },
+  { name: "Vita", url: "/cv" },
   { name: "Projects", url: "/projects" }
 ];
 

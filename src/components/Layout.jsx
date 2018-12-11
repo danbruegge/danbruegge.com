@@ -19,8 +19,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${currentTheme.background.color};
     color: ${currentTheme.text.color};
-    font-size: ${currentTheme.base.fontSizeMobile};
-    padding: 2rem 1rem;
+    font-size: ${currentTheme.base.fontSize};
+    padding: 1rem 1rem 2rem;
   }
 
   h1 {
@@ -29,15 +29,14 @@ const GlobalStyle = createGlobalStyle`
 
   @media (${currentTheme.breakpoints.desktop}) {
     body {
-      font-size: ${currentTheme.base.fontSizeDesktop};
-      padding: 2rem;
+      padding: 3rem 2rem 2rem;
     }
   }
 `;
 
 const Layout = ({ children, title }) => (
   <>
-    <Head title={title} />
+    <Head title={`${title} <//> Daniel Brüggemann - danbruegge.com`} />
     <ThemeProvider theme={currentTheme}>
       <Container>
         <Header links={HEADER_LINKS} />

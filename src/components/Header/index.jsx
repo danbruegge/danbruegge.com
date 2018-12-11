@@ -14,5 +14,5 @@ const Header = ({ children, links, ...props }) => (
 );
 
 export default styled(Header)`
-  margin: 1rem 0.25rem 5rem;
+  margin: 0 0.25rem 5rem;
 `;
