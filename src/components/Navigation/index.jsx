@@ -1,18 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import List from "./List";
 import ItemLink from "./ItemLink";
+
+const spacer = <span>&nbsp;/&nbsp;</span>;
 
 const Navigation = ({ links, linkElement: Link }) => (
   <nav>
-    <List>
-      {links.map(item => (
-        <li key={item.url}>
-          <Link to={item.url}>{item.name}</Link>
-        </li>
-      ))}
-    </List>
+    {links.map((item, index) => (
+      <>
+        <Link key={item.url} to={item.url}>
+          {item.name}
+        </Link>
+        {links.length > index + 1 && spacer}
+      </>
+    ))}
   </nav>
 );
 

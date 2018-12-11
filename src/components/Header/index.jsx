@@ -12,13 +12,5 @@ const Header = ({ children, links, ...props }) => (
 );
 
 export default styled(Header)`
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 1rem;
-  text-align: center;
-
-  @media (${props => props.theme.breakpoints.desktop}) {
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+  margin: 1rem 0.25rem 5rem;
 `;

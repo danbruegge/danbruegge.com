@@ -4,7 +4,13 @@ import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
 const StyledLink = styled.a`
+  box-shadow: 0 1px 0 0 currentColor;
   color: ${props => props.theme.link.color};
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: none;
+  }
 `;
 
 const Link = ({ to, ...oldProps }) => {

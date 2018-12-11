@@ -15,12 +15,5 @@ const Footer = ({ links, ...props }) => (
 );
 
 export default styled(Footer)`
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
-  text-align: center;
-
-  @media (${props => props.theme.breakpoints.desktop}) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
+  margin: 3rem 0.25rem 0;
 `;

@@ -9,16 +9,16 @@ export default {
       desktopSize: "750px"
     },
     background: {
-      color: "#444"
+      color: "#fff"
     },
     text: {
-      color: "#eee"
+      color: "#222"
     },
     link: {
       color: "#ac3"
     },
     title: {
-      color: "#666",
+      color: "#222",
       weight: "700",
       size: "1.5em"
     }

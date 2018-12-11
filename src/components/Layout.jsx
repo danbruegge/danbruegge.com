@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 2rem 1rem;
   }
 
+  h1 {
+    font-size: 1.7em;
+  }
+
   @media (${currentTheme.breakpoints.desktop}) {
     body {
       font-size: ${currentTheme.base.fontSizeDesktop};

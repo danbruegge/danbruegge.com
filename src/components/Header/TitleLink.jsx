@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from "../Link";
 
 const TitleLink = styled(Link)`
+  box-shadow: none;
   color: ${props => props.theme.title.color};
   display: inline-block;
   font-size: ${props => props.theme.title.size};
