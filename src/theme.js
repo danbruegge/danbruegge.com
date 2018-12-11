@@ -17,10 +17,17 @@ export default {
     link: {
       color: "#ac3"
     },
-    title: {
-      color: "#222",
-      weight: "700",
-      size: "1.5em"
+    header: {
+      title: {
+        color: "#222",
+        weight: "700",
+        size: "1.5em"
+      },
+      subtitle: {
+        color: "#222",
+        weight: "700",
+        size: "1em"
+      }
     }
   }
 };

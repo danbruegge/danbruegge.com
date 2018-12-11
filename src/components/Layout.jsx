@@ -40,7 +40,7 @@ const Layout = ({ children, title }) => (
     <Head title={title} />
     <ThemeProvider theme={currentTheme}>
       <Container>
-        <Header links={HEADER_LINKS}>{"Daniel Brüggemann <//>"}</Header>
+        <Header links={HEADER_LINKS} />
         <Content>{children}</Content>
         <Footer links={FOOTER_LINKS} />
       </Container>
