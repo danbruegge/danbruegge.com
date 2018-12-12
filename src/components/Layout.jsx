@@ -13,25 +13,12 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 
+import globalStyling from "../globalStyling";
+
 const currentTheme = THEME.default;
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: ${currentTheme.background.color};
-    color: ${currentTheme.text.color};
-    font-size: ${currentTheme.base.fontSize};
-    padding: 1rem 1rem 2rem;
-  }
-
-  h1 {
-    font-size: 1.7em;
-  }
-
-  @media (${currentTheme.breakpoints.desktop}) {
-    body {
-      padding: 3rem 2rem 2rem;
-    }
-  }
+  ${globalStyling(currentTheme)}
 `;
 
 const Layout = ({ children, title }) => (

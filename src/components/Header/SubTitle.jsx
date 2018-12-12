@@ -4,7 +4,7 @@ const SubTitle = styled.p`
   color: ${props => props.theme.header.subtitle.color};
   font-size: ${props => props.theme.header.subtitle.size};
   font-weight: ${props => props.theme.header.subtitle.weight};
-  margin: 0.25rem 0 2rem;
+  margin: 0.25rem 0 4rem;
   text-align: right;
 `;
 
