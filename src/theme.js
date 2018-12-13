@@ -1,7 +1,8 @@
 export default {
   default: {
     base: {
-      fontSize: "25px"
+      fontSizeDesktop: "25px",
+      fontSizeMobile: "18px"
     },
     breakpoints: {
       desktop: "min-width: 750px",

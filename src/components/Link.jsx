@@ -6,7 +6,7 @@ import styled from "styled-components";
 const getThemeProp = key => props => props.theme.link[key];
 
 const StyledLink = styled.a`
-  box-shadow: 0px -0.15rem 0px 0px ${getThemeProp("colorUnderline")} inset;
+  box-shadow: 0px 0.2rem 0px 0px ${getThemeProp("colorUnderline")};
   color: ${getThemeProp("color")};
   text-decoration: none;
 

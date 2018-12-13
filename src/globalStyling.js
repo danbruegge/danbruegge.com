@@ -6,7 +6,7 @@ export default theme => `
   body {
     background-color: ${theme.background.color};
     color: ${theme.text.color};
-    font-size: ${theme.base.fontSize};
+    font-size: ${theme.base.fontSizeMobile};
     padding: 1rem 1rem 2rem;
     font-family: "Fira Mono", monospace;
   }
@@ -17,6 +17,7 @@ export default theme => `
 
   @media (${theme.breakpoints.desktop}) {
     body {
+      font-size: ${theme.base.fontSizeDesktop};
       padding: 3rem 2rem 2rem;
     }
   }
