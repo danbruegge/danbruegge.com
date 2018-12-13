@@ -14,7 +14,9 @@ export default {
       color: "#222"
     },
     link: {
-      color: "#ac3"
+      color: "#222",
+      colorHover: "#000",
+      colorUnderline: "#ac3"
     },
     header: {
       title: {

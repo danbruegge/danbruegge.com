@@ -3,13 +3,16 @@ import PropTypes from "prop-types";
 import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
+const getThemeProp = key => props => props.theme.link[key];
+
 const StyledLink = styled.a`
-  box-shadow: 0 1px 0 0 currentColor;
-  color: ${props => props.theme.link.color};
+  box-shadow: 0px -0.15rem 0px 0px ${getThemeProp("colorUnderline")} inset;
+  color: ${getThemeProp("color")};
   text-decoration: none;
 
   &:hover {
     box-shadow: none;
+    color: ${getThemeProp("colorHover")};
   }
 `;
 
