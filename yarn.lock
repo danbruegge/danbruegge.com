@@ -701,6 +701,11 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@danbruegge/gatsby-plugin-stylelint@^3.0.1":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@danbruegge/gatsby-plugin-stylelint/-/gatsby-plugin-stylelint-3.3.2.tgz#aadafdb8f244f0431966fcb6fea400c3a2d00b1d"
+  integrity sha512-LzP1yofyN4VoAB+qWA0OQAQhTdn+somzBZTDCo1zhQ6ut10l2ktCPFwL1NNa/IGtX8epWCwmnfugI0aR83Gc4Q==
+
 "@emotion/is-prop-valid@^0.7.3":
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.7.3.tgz#a6bf4fa5387cbba59d44e698a4680f481a8da6cc"
@@ -4637,11 +4642,6 @@ gatsby-plugin-styled-components@^3.0.0:
   integrity sha512-SD9a8bqn+WssH1FHqS0Nsx2oRra34fusrM4zBgLn2fCzw1s/O2xpgxJb5HtfSS7uFWYtO8ptLlPVbVxBwgWKFw==
   dependencies:
     "@babel/runtime" "^7.0.0"
-
-gatsby-plugin-stylelint@^3.0.1:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-stylelint/-/gatsby-plugin-stylelint-3.2.0.tgz#30639ee5d801248e75ce7369a88b27fda7b9a5eb"
-  integrity sha512-nr9ZXV+elnrmGkQtat063/VWliTBB+1efx96Kz9ZToEaSmCbD8/7G3+VmIkNlinA2ptO4QPgUCaos2P4xFpcXg==
 
 gatsby-react-router-scroll@^2.0.3:
   version "2.0.3"
