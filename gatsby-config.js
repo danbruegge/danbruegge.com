@@ -6,6 +6,7 @@ module.exports = {
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
-    "@danbruegge/gatsby-plugin-stylelint"
+    "@danbruegge/gatsby-plugin-stylelint",
+    "gatsby-plugin-typescript"
   ]
 };
