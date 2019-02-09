@@ -1,15 +1,18 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": [
-    "airbnb",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "prettier/react",
-    "plugin:@typescript-eslint/recommended"
+    "prettier/react"
   ],
-  "plugins": ["prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
     "@typescript-eslint/indent": "off"
+  },
+  "env": {
+    "node": true,
+    "browser": true
   }
 }
