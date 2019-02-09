@@ -13,10 +13,11 @@
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
+    "prebuild": "yarn type-check && yarn lint:es && yarn lint:style",
     "build": "gatsby build",
-    "format": "prettier --ignore-path .gitignore --write '**/*.{js,jsx,json}'",
+    "format": "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json}'",
     "lint:es": "eslint --ignore-path .gitignore --fix .",
-    "lint:style": "stylelint 'src/**/*.{js,jsx}'",
+    "lint:style": "stylelint 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch"

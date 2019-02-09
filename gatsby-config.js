@@ -4,9 +4,9 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-eslint",
+    "gatsby-plugin-typescript",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
-    "@danbruegge/gatsby-plugin-stylelint",
-    "gatsby-plugin-typescript"
+    "@danbruegge/gatsby-plugin-stylelint"
   ]
 };
