@@ -1,16 +1,11 @@
 {
-  "name": "gatsby-starter-default-extended",
-  "description": "Gatsby v2 extended default starter with linting and styled-components",
+  "name": "@danbruegge/danbruegge.com",
+  "private": true,
+  "description": "danbruegge.com",
   "version": "1.0.0",
-  "author": "Daniel Brüggemann",
-  "keywords": [
-    "gatsby",
-    "starter",
-    "eslint",
-    "stylelint",
-    "styled-components"
-  ],
+  "author": "Daniel Brüggemann <hello@danbruegge.com>",
   "license": "MIT",
+  "homepage": "https://danbruegge.com",
   "scripts": {
     "start": "gatsby serve",
     "dev": "gatsby develop",
@@ -22,10 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danbruegge/gatsby-starter-default-extended"
   },
   "dependencies": {
     "@danbruegge/gatsby-plugin-stylelint": "^3.0.1",

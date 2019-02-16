@@ -1,25 +1,17 @@
-# gatsby-starter-default-extended
-The extended default Gatsby v2 starter with `eslint`, `stylelint` and
-`styled-components`.
+[danbruegge.com][site]
+======================
+**[in development]**
 
-For an overview of the project structure please refer to the [Gatsby
-documentation - Building with
-Components](https://www.gatsbyjs.org/docs/building-with-components/).
+I'm a freelance software developer and this is my website.
 
-## Install
+Build with [GatsbyJS][gatsby] and based on [gatsby-starter-extended][starter].
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+To view it locally run:
++ `yarn`
++ `yarn dev`
++ open [localhost:8000][local]
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site https://github.com/danbruegge/gatsby-starter-default-extended/
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
+[site]: https://danbruegge.com
+[gatsby]: https://www.gatsbyjs.org/
+[starter]: https://github.com/danbruegge/gatsby-starter-default-extended
+[local]: https//localhost:8000
