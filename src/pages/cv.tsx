@@ -1,10 +1,10 @@
-import React from "react";
+import * as React from "react";
 
-import Layout from "../components/Layout";
+import { Layout } from "components/Layout";
 
 const title = "Curriculum Vitae";
 
-const cv = () => (
+const cv = (): JSX.Element => (
   <Layout title={title}>
     <h1>{title}</h1>
     <p>Welcome to page 2</p>

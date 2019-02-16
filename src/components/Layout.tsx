@@ -1,29 +1,27 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import * as React from "react";
+import { ThemeProvider } from "styled-components";
 
-import "../../node_modules/normalize.css/normalize.css";
-
-import THEME from "../theme";
-import { HEADER_LINKS, FOOTER_LINKS } from "../config";
+import { THEME } from "theme";
+import { HEADER_LINKS, FOOTER_LINKS } from "config";
 
 import Head from "./Head";
 import Container from "./Container";
-import Header from "./Header";
+import { Header } from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 
-import globalStyling from "../globalStyling";
-
 const currentTheme = THEME.default;
 
-const GlobalStyle = createGlobalStyle`
-  ${globalStyling(currentTheme)}
-`;
+const suffix = "<//> Daniel Brüggemann - danbruegge.com";
 
-const Layout = ({ children, title }) => (
+interface Props {
+  children: React.ReactNode;
+  title: string;
+}
+
+export const Layout = ({ children, title }: Props): JSX.Element => (
   <>
-    <Head title={`${title} <//> Daniel Brüggemann - danbruegge.com`} />
+    <Head title={`${title} ${suffix}`} />
     <ThemeProvider theme={currentTheme}>
       <Container>
         <Header links={HEADER_LINKS} />
@@ -31,13 +29,5 @@ const Layout = ({ children, title }) => (
         <Footer links={FOOTER_LINKS} />
       </Container>
     </ThemeProvider>
-    <GlobalStyle />
   </>
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired
-};
-
-export default Layout;

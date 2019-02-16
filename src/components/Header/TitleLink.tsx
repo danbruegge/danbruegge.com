@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import Link from "../Link";
+import { Link } from "components/Link";
 
-const TitleLink = styled(Link)`
+export const TitleLink = styled(Link)`
   box-shadow: none;
   color: ${props => props.theme.header.title.color};
   display: block;
@@ -11,5 +11,3 @@ const TitleLink = styled(Link)`
   text-decoration: none;
   text-align: right;
 `;
-
-export default TitleLink;

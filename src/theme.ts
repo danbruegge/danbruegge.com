@@ -1,12 +1,23 @@
-export default {
+const BREAKPOINTS = {
+  desktop: "750px"
+};
+
+export const THEME = {
   default: {
     base: {
-      fontSizeDesktop: "25px",
-      fontSizeMobile: "18px"
+      fontSize: {
+        mobile: "18px",
+        desktop: "25px"
+      },
+      fontFamily: ["Fira Mono", "monospace"],
+      padding: {
+        mobile: "1rem 1rem 2rem",
+        desktop: "3rem 2rem 2rem"
+      }
     },
     breakpoints: {
-      desktop: "min-width: 750px",
-      desktopSize: "750px"
+      desktop: `min-width: ${BREAKPOINTS.desktop}`,
+      desktopSize: BREAKPOINTS.desktop
     },
     background: {
       color: "#fff"

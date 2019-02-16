@@ -1,33 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
 import { Link as GatsbyLink } from "gatsby";
 import styled from "styled-components";
 
-const getThemeProp = key => props => props.theme.link[key];
+export interface Props {
+  children: React.ReactNode;
+  to: string;
+}
 
 const StyledLink = styled.a`
-  box-shadow: 0px 0.2rem 0px 0px ${getThemeProp("colorUnderline")};
-  color: ${getThemeProp("color")};
+  box-shadow: 0px 0.2rem 0px 0px ${props => props.theme.link.colorUnderline};
+  color: ${props => props.theme.link.color};
   text-decoration: none;
 
   &:hover {
     box-shadow: none;
-    color: ${getThemeProp("colorHover")};
+    color: ${props => props.theme.link.colorHover};
   }
 `;
 
-const Link = ({ to, ...oldProps }) => {
+export const Link = ({ to, ...oldProps }: Props): JSX.Element => {
   const isInternal = /^\/(?!\/)/.test(to);
   const props = {
     ...oldProps,
-    [isInternal ? "to" : "href"]: to
+    [isInternal ? "to" : "href"]: to,
+    as: isInternal && GatsbyLink
   };
 
-  return <StyledLink as={isInternal && GatsbyLink} {...props} />;
+  return <StyledLink {...props} />;
 };
-
-Link.propTypes = {
-  to: PropTypes.string.isRequired
-};
-
-export default Link;

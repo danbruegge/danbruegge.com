@@ -1,4 +1,4 @@
-export default `
+export const fonts = `
   @font-face{
     font-family: "Fira Mono";
     font-style: normal;

@@ -1,5 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
 import Helmet from "react-helmet";
 
 const META = [
@@ -7,10 +6,10 @@ const META = [
   { name: "keywords", content: "sample, something" }
 ];
 
-const Head = props => <Helmet meta={META} {...props} />;
+interface Props {
+  title: string;
+}
 
-Head.propTypes = {
-  title: PropTypes.string.isRequired
-};
+const Head = (props: Props): JSX.Element => <Helmet meta={META} {...props} />;
 
 export default Head;

@@ -1,11 +1,11 @@
-import React from "react";
+import * as React from "react";
 
-import Layout from "../components/Layout";
-import Link from "../components/Link";
+import { Layout } from "components/Layout";
+import { Link } from "components/Link";
 
 const title = "Index Page";
 
-const IndexPage = () => (
+const IndexPage = (): JSX.Element => (
   <Layout title={title}>
     <h1>{title}</h1>
     <p>Welcome to your new Gatsby site.</p>
