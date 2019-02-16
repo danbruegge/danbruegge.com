@@ -1,6 +1,5 @@
-[danbruegge.com][site]
-======================
-**[in development]**
+[danbruegge.com][site] [in development]
+=======================================
 
 I'm a freelance software developer and this is my website.
 
