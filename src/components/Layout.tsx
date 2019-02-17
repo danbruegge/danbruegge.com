@@ -2,13 +2,12 @@ import * as React from "react";
 import { ThemeProvider } from "styled-components";
 
 import { THEME } from "theme";
-import { HEADER_LINKS, FOOTER_LINKS } from "config";
 
 import { Head } from "./Head";
 import Container from "./Container";
 import { Header } from "./Header";
 import Content from "./Content";
-import Footer from "./Footer";
+import { Footer } from "./Footer";
 
 const currentTheme = THEME.default;
 
@@ -22,9 +21,9 @@ export const Layout = ({ children, title }: Props): JSX.Element => (
     <Head title={title} />
     <ThemeProvider theme={currentTheme}>
       <Container>
-        <Header links={HEADER_LINKS} />
+        <Header />
         <Content>{children}</Content>
-        <Footer links={FOOTER_LINKS} />
+        <Footer />
       </Container>
     </ThemeProvider>
   </>

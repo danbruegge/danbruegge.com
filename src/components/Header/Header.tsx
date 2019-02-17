@@ -1,27 +1,43 @@
 import * as React from "react";
 import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
 
 import { Navigation } from "components/Navigation";
-import { Links } from "components/Navigation/types";
 
 import { TitleLink } from "./TitleLink";
 import { SubTitle } from "./SubTitle";
 
-interface Props {
-  children?: React.ReactNode;
-  links: Links;
-}
-
-const titleText = "<//> danbruegge.com";
+const query = graphql`
+  {
+    site {
+      siteMetadata {
+        titleText
+        subTitleText
+        headerLinks {
+          name
+          url
+        }
+      }
+    }
+  }
+`;
 
 const StyledHeader = styled.header`
   margin: 0 0.25rem 4.5rem;
 `;
 
-export const Header = ({ links, ...props }: Props): JSX.Element => (
-  <StyledHeader {...props}>
-    <TitleLink to="/">{titleText}</TitleLink>
-    <SubTitle>Software developer</SubTitle>
-    <Navigation links={links} />
-  </StyledHeader>
-);
+interface Props {
+  children?: React.ReactNode;
+}
+
+export const Header = (props: Props): JSX.Element => {
+  const { site } = useStaticQuery(query);
+
+  return (
+    <StyledHeader {...props}>
+      <TitleLink to="/">{site.siteMetadata.titleText}</TitleLink>
+      <SubTitle>{site.siteMetadata.subTitleText}</SubTitle>
+      <Navigation links={site.siteMetadata.headerLinks} />
+    </StyledHeader>
+  );
+};
