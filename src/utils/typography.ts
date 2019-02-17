@@ -1,8 +1,8 @@
 import Typography from "typography";
 
-import { THEME } from "./../theme";
+import { THEME } from "theme";
 
-const currentTheme = THEME.default;
+export const currentTheme = THEME.default;
 
 const typography: Typography = new Typography({
   baseFontSize: currentTheme.base.fontSize.mobile,
