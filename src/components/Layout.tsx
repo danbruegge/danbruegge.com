@@ -1,13 +1,18 @@
 import * as React from "react";
 import { ThemeProvider } from "styled-components";
 
-import { currentTheme } from "utils/typography";
+import { breakpoints, light } from "theme";
 
 import { Head } from "./Head";
 import { Container } from "./Container";
 import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
+
+const currentTheme = {
+  breakpoints,
+  ...light
+};
 
 interface Props {
   children: React.ReactNode;

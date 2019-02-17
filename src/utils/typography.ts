@@ -1,22 +1,20 @@
 import Typography from "typography";
 
-import { THEME } from "theme";
-
-export const currentTheme = THEME.default;
+import { base, breakpoints } from "theme";
 
 const typography: Typography = new Typography({
-  baseFontSize: currentTheme.base.fontSize.mobile,
-  bodyFontFamily: currentTheme.base.fontFamily,
-  bodyColor: currentTheme.text.color,
+  baseFontSize: base.fontSize.mobile,
+  bodyFontFamily: base.fontFamily,
+  bodyColor: base.text.color,
   overrideStyles: () => ({
     body: {
-      backgroundColor: currentTheme.background.color,
-      padding: currentTheme.base.padding.mobile
+      backgroundColor: base.background.color,
+      padding: base.padding.mobile
     },
-    [`@media (${currentTheme.breakpoints.desktop})`]: {
+    [`@media (${breakpoints.desktop})`]: {
       body: {
-        fontSize: currentTheme.base.fontSize.desktop,
-        padding: currentTheme.base.padding.desktop
+        fontSize: base.fontSize.desktop,
+        padding: base.padding.desktop
       }
     }
   })
