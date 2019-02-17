@@ -4,9 +4,9 @@ import { ThemeProvider } from "styled-components";
 import { THEME } from "theme";
 
 import { Head } from "./Head";
-import Container from "./Container";
+import { Container } from "./Container";
 import { Header } from "./Header";
-import Content from "./Content";
+import { Content } from "./Content";
 import { Footer } from "./Footer";
 
 const currentTheme = THEME.default;

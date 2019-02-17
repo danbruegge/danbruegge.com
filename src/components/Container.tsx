@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.div`
+export const Container = styled.div`
   margin: 0 auto;
   max-width: ${props => props.theme.breakpoints.desktopSize};
 `;
