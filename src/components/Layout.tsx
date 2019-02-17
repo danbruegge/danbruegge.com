@@ -4,15 +4,13 @@ import { ThemeProvider } from "styled-components";
 import { THEME } from "theme";
 import { HEADER_LINKS, FOOTER_LINKS } from "config";
 
-import Head from "./Head";
+import { Head } from "./Head";
 import Container from "./Container";
 import { Header } from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 
 const currentTheme = THEME.default;
-
-const suffix = "<//> Daniel Brüggemann - danbruegge.com";
 
 interface Props {
   children: React.ReactNode;
@@ -21,7 +19,7 @@ interface Props {
 
 export const Layout = ({ children, title }: Props): JSX.Element => (
   <>
-    <Head title={`${title} ${suffix}`} />
+    <Head title={title} />
     <ThemeProvider theme={currentTheme}>
       <Container>
         <Header links={HEADER_LINKS} />

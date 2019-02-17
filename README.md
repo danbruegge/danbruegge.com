@@ -6,6 +6,7 @@ I'm a freelance software developer and this is my website.
 Build with [GatsbyJS][gatsby] and based on [gatsby-starter-extended][starter].
 
 To view it locally run:
+
 + `yarn`
 + `yarn dev`
 + open [localhost:8000][local]

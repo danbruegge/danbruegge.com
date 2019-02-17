@@ -1,15 +1,29 @@
 import * as React from "react";
 import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
-const META = [
-  { name: "description", content: "Sample" },
-  { name: "keywords", content: "sample, something" }
-];
+const query = graphql`
+  {
+    site {
+      siteMetadata {
+        titleSuffix
+        description
+      }
+    }
+  }
+`;
 
 interface Props {
   title: string;
 }
 
-const Head = (props: Props): JSX.Element => <Helmet meta={META} {...props} />;
+export const Head = ({ title }: Props): JSX.Element => {
+  const { site } = useStaticQuery(query);
 
-export default Head;
+  return (
+    <Helmet titleTemplate={`%s ${site.siteMetadata.titleSuffix}`}>
+      <title>{title}</title>
+      <meta name="description" content={site.siteMetadata.description} />
+    </Helmet>
+  );
+};

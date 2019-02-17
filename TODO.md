@@ -6,3 +6,5 @@ TODO
 + move footer links to `/about`
   + use svg icons
 + include image of mine in `/about`
++ make website dat:// ready - https://docs.datproject.org/
++ favicon

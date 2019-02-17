@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    titleSuffix: "<//> Daniel Brüggemann - danbruegge.com",
+    description: "Sample"
+  },
   plugins: [
     "gatsby-plugin-eslint",
     "gatsby-plugin-typescript",
