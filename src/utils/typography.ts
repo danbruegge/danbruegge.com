@@ -11,6 +11,9 @@ const typography: Typography = new Typography({
       backgroundColor: base.background.color,
       padding: base.padding.mobile
     },
+    ul: {
+      marginLeft: "3rem"
+    },
     [`@media (${breakpoints.desktop})`]: {
       body: {
         fontSize: base.fontSize.desktop,
