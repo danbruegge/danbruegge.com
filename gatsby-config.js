@@ -6,7 +6,7 @@ module.exports = {
     description: "Sample",
     headerLinks: [
       { name: "About", url: "/" },
-      { name: "CV", url: "/cv" },
+      { name: "Vita", url: "/vita" },
       { name: "Referenzen", url: "/referenzen" },
       { name: "Notes", url: "/notes" }
     ],
