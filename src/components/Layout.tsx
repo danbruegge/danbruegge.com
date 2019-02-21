@@ -26,7 +26,6 @@ export const Layout = ({ children, title }: Props): JSX.Element => (
       <Container>
         <Header />
         <Content>{children}</Content>
-        <Footer />
       </Container>
     </ThemeProvider>
   </>

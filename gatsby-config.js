@@ -5,17 +5,21 @@ module.exports = {
     titleSuffix: "<//> Daniel Brüggemann - danbruegge.com",
     description: "Sample",
     headerLinks: [
-      { name: "Home", url: "/" },
-      { name: "About", url: "/about" },
-      { name: "Vita", url: "/cv" },
-      { name: "Projects", url: "/projects" }
-    ],
-    footerLinks: [
-      { name: "Github", url: "https://github.com/" },
-      { name: "Stackoverflow", url: "https://stackoverflow.com/" },
-      { name: "Twitter", url: "https://twitter.com/" },
+      { name: "About", url: "/" },
+      { name: "CV", url: "/cv" },
+      { name: "Referenzen", url: "/referenzen" },
       { name: "Notes", url: "/notes" }
-    ]
+    ],
+    pages: {
+      about: {
+        title: "About",
+        socialLinks: [
+          { name: "Github", url: "https://github.com/" },
+          { name: "Stackoverflow", url: "https://stackoverflow.com/" },
+          { name: "Twitter", url: "https://twitter.com/" }
+        ]
+      }
+    }
   },
   plugins: [
     "gatsby-plugin-eslint",
