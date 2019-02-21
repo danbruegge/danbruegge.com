@@ -18,7 +18,7 @@ export const base = {
     desktop: "3rem 2rem 2rem"
   },
   background: {
-    color: "#fff"
+    color: "#eee"
   },
   text: {
     color: "#222"
