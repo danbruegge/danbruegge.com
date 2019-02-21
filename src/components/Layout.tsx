@@ -7,7 +7,7 @@ import { Head } from "./Head";
 import { Container } from "./Container";
 import { Header } from "./Header";
 import { Content } from "./Content";
-import { Footer } from "./Footer";
+import { PageTitle } from "components/PageTitle";
 
 const currentTheme = {
   breakpoints,
@@ -25,7 +25,10 @@ export const Layout = ({ children, title }: Props): JSX.Element => (
     <ThemeProvider theme={currentTheme}>
       <Container>
         <Header />
-        <Content>{children}</Content>
+        <Content>
+          <PageTitle>{title}</PageTitle>
+          {children}
+        </Content>
       </Container>
     </ThemeProvider>
   </>

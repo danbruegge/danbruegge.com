@@ -6,7 +6,6 @@ const title = "Referenzen";
 
 const Referenzen = (): JSX.Element => (
   <Layout title={title}>
-    <h1>{title}</h1>
     <p>Welcome to page 2</p>
   </Layout>
 );

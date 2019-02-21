@@ -8,13 +8,11 @@ interface SocialLink {
 }
 
 export interface Props {
-  title: string;
   socialLinks: SocialLink[];
 }
 
-export const About = ({ title, socialLinks }: Props): JSX.Element => (
+export const About = ({ socialLinks }: Props): JSX.Element => (
   <>
-    <h1>{title}</h1>
     <h2>Social</h2>
     <ul>
       {socialLinks.map((link: SocialLink) => (
