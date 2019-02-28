@@ -2,7 +2,8 @@ import * as React from "react";
 import { graphql } from "gatsby";
 
 import { Layout } from "components/Layout";
-import { About, Props as AboutProps } from "components/About";
+import { About } from "components/About";
+import { Props as AboutProps } from "components/About/types";
 
 interface AboutPage extends AboutProps {
   title: string;

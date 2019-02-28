@@ -13,9 +13,12 @@ module.exports = {
       about: {
         title: "About",
         socialLinks: [
-          { name: "Github", url: "https://github.com/" },
-          { name: "Stackoverflow", url: "https://stackoverflow.com/" },
-          { name: "Twitter", url: "https://twitter.com/" }
+          { name: "Github", url: "https://github.com/danbruegge/" },
+          {
+            name: "Stackoverflow",
+            url: "https://stackoverflow.com/users/1592039/danbruegge"
+          },
+          { name: "Twitter", url: "https://twitter.com/danbruegge" }
         ]
       }
     }

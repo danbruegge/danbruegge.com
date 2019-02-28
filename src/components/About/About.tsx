@@ -2,14 +2,7 @@ import * as React from "react";
 
 import { Link } from "components/Link";
 
-interface SocialLink {
-  name: string;
-  url: string;
-}
-
-export interface Props {
-  socialLinks: SocialLink[];
-}
+import { SocialLink, Props } from "./types";
 
 export const About = ({ socialLinks }: Props): JSX.Element => (
   <>
