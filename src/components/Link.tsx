@@ -23,7 +23,8 @@ export const Link = ({ to, ...oldProps }: Props): JSX.Element => {
   const props = {
     ...oldProps,
     [isInternal ? "to" : "href"]: to,
-    as: isInternal && GatsbyLink
+    as: isInternal && GatsbyLink,
+    activeClassName: "active"
   };
 
   return <StyledLink {...props} />;
