@@ -18,7 +18,11 @@ module.exports = {
             name: "Stackoverflow",
             url: "https://stackoverflow.com/users/1592039/danbruegge"
           },
-          { name: "Twitter", url: "https://twitter.com/danbruegge" }
+          { name: "Twitter", url: "https://twitter.com/danbruegge" },
+          {
+            name: "Xing",
+            url: "https://www.xing.com/profile/Daniel_Brueggemann6/"
+          }
         ]
       }
     }
