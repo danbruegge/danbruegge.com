@@ -31,7 +31,12 @@ module.exports = {
     "gatsby-plugin-eslint",
     "gatsby-plugin-typescript",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-plugin-styled-components",
+      options: {
+        displayName: true
+      }
+    },
     "@danbruegge/gatsby-plugin-stylelint",
     {
       resolve: `gatsby-plugin-typography`,
