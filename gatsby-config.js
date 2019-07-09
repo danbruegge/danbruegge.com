@@ -37,7 +37,12 @@ module.exports = {
         displayName: true
       }
     },
-    "@danbruegge/gatsby-plugin-stylelint",
+    {
+      resolve: "@danbruegge/gatsby-plugin-stylelint",
+      options: {
+        files: ["**/*.{js,jsx,ts,tsx}"]
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
