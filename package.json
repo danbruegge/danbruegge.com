@@ -8,7 +8,7 @@
   "homepage": "https://danbruegge.com",
   "scripts": {
     "start": "gatsby serve",
-    "dev": "NODE_ENV=dev gatsby develop",
+    "dev": "NODE_ENV=dev gatsby develop --host 0.0.0.0",
     "prebuild": "yarn lint:types && yarn lint:es && yarn lint:style",
     "build": "gatsby build",
     "format": "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,json}'",
