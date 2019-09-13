@@ -1,7 +1,8 @@
-import * as React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Article } from "components/Article";
+import { ArticleTitle } from "components/ArticleTitle";
 import { Link } from "components/Link";
 
 import { SocialLink, Props } from "./types";
@@ -34,17 +35,17 @@ const Desciption = styled.div`
   flex: 3;
 `;
 
-export const About = ({ socialLinks }: Props): JSX.Element => (
+export const About: FC<Props> = ({ socialLinks }) => (
   <FlexArticle>
     <Image src="/images/me.jpg" alt="Me" />
     <Desciption>
-      <h2>Me</h2>
+      <ArticleTitle>Me</ArticleTitle>
       <p>
         {
-          "Hi, i'm Daniel Brüggemann a Freelance Software developer from Nennhausen."
+          "Hi, i'm Daniel Brüggemann a Freelance Software developer from Nennhausen/Berlin Germany."
         }
       </p>
-      <h2>Social</h2>
+      <ArticleTitle>Social</ArticleTitle>
       <ul>
         {socialLinks.map(
           (link: SocialLink): JSX.Element => (
