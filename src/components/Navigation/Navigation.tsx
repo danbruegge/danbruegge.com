@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import { Navigation as Props } from "./types";
 import { ItemLink } from "./ItemLink";
