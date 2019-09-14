@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { graphql } from "gatsby";
 
 import { Layout } from "components/Layout";
@@ -21,7 +21,7 @@ interface Props {
   };
 }
 
-const AboutPage = ({ data }: Props): JSX.Element => {
+const AboutPage: FC<Props> = ({ data }) => {
   const page = data.site.siteMetadata.pages.about;
 
   return (

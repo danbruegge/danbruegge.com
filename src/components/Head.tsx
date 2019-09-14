@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -17,7 +17,7 @@ interface Props {
   title: string;
 }
 
-export const Head = ({ title }: Props): JSX.Element => {
+export const Head: FC<Props> = ({ title }) => {
   const { site } = useStaticQuery(query);
 
   return (

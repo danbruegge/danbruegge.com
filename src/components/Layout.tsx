@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { ThemeProvider } from "styled-components";
 
 import { breakpoints, light } from "theme";
@@ -15,11 +15,10 @@ const currentTheme = {
 };
 
 interface Props {
-  children: React.ReactNode;
   title: string;
 }
 
-export const Layout = ({ children, title }: Props): JSX.Element => (
+export const Layout: FC<Props> = ({ children, title }) => (
   <>
     <Head title={title} />
     <ThemeProvider theme={currentTheme}>

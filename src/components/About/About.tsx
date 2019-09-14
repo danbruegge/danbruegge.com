@@ -47,13 +47,11 @@ export const About: FC<Props> = ({ socialLinks }) => (
       </p>
       <ArticleTitle>Social</ArticleTitle>
       <ul>
-        {socialLinks.map(
-          (link: SocialLink): JSX.Element => (
-            <li key={link.url}>
-              <Link to={link.url}>{link.name}</Link>
-            </li>
-          )
-        )}
+        {socialLinks.map((link: SocialLink) => (
+          <li key={link.url}>
+            <Link to={link.url}>{link.name}</Link>
+          </li>
+        ))}
       </ul>
     </Desciption>
   </FlexArticle>

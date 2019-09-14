@@ -1,14 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { Navigation as Props } from "./types";
 import { ItemLink } from "./ItemLink";
 
 const spacer = <span>&nbsp;/&nbsp;</span>;
 
-export const Navigation = ({
+export const Navigation: FC<Props> = ({
   links,
   linkElement: Link = ItemLink
-}: Props): JSX.Element => (
+}) => (
   <nav>
     {links.map((item, index) => (
       <React.Fragment key={item.name}>

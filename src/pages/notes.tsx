@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { Layout } from "components/Layout";
 
-const notes = (): JSX.Element => (
+const Notes: FC = () => (
   <Layout title="Notes">
     <p>Welcome to page 2</p>
   </Layout>
 );
 
-export default notes;
+export default Notes;

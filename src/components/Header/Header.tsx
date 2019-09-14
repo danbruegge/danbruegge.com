@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -26,11 +26,7 @@ const StyledHeader = styled.header`
   margin: 0 0.25rem 4.5rem;
 `;
 
-interface Props {
-  children?: React.ReactNode;
-}
-
-export const Header = (props: Props): JSX.Element => {
+export const Header: FC = props => {
   const { site } = useStaticQuery(query);
 
   return (

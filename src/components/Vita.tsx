@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { Article } from "components/Article";
 
-export const Vita = (): JSX.Element => (
+export const Vita: FC = () => (
   <>
     <Article>
       <p>Welcome to page 2</p>
