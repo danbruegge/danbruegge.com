@@ -26,7 +26,20 @@ module.exports = {
       ]
     },
     vita: {
-      title: "Vita"
+      title: "Vita",
+      keySkills: [
+        "React",
+        "Typescript",
+        "Styled-Components",
+        "Redux",
+        "Next.js",
+        "GatsbyJS",
+        "Javascript",
+        "JestJS",
+        "GraphQL",
+        "NodeJS",
+        "Contentful"
+      ]
     }
   }
 };

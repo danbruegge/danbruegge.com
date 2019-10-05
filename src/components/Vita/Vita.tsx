@@ -3,7 +3,10 @@ import React, { FC } from "react";
 import { Article } from "components/Article";
 import { Section } from "components/Section";
 
-export const Vita: FC = () => (
+import { Skill } from "./Skill";
+import { VitaProps } from "./types";
+
+export const Vita: FC<VitaProps> = ({ keySkills }) => (
   <main>
     <Article>
       <Section>
@@ -11,7 +14,11 @@ export const Vita: FC = () => (
       </Section>
       <Section>
         <h2>Key Skills</h2>
-        <p>Welcome to page 2</p>
+        <p>
+          {keySkills.map(name => (
+            <Skill key={name}>{name}</Skill>
+          ))}
+        </p>
       </Section>
       <Section>
         <h2>References</h2>

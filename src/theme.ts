@@ -18,20 +18,26 @@ export const base = {
     desktop: "3rem 2rem 2rem"
   },
   background: {
-    color: "#eee"
+    color: "#eeeeee"
   },
   text: {
-    color: "#222"
+    color: "#222222"
+  },
+  colors: {
+    black: "#000000",
+    grey: "#dddddd",
+    primary: "#aacc33"
   }
 };
 
 export const light = {
   background: base.background,
   text: base.text,
+  colors: base.colors,
   link: {
     color: base.text.color,
-    colorHover: "#000",
-    colorUnderline: "#ac3"
+    colorHover: base.colors.black,
+    colorUnderline: base.colors.primary
   },
   header: {
     title: {
