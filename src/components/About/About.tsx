@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 
-import { Article } from "components/Article";
-import { ArticleTitle } from "components/ArticleTitle";
+import { H2 } from "components/H2";
+import { Section } from "components/Section";
 import { Link } from "components/Link";
 
 import { SocialLink, Props } from "./types";
 
-const FlexArticle = styled(Article)`
+const Main = styled.main`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -31,28 +31,32 @@ const Image = styled.img`
   }
 `;
 
-const Desciption = styled.div`
+const Desciption = styled.article`
   flex: 3;
 `;
 
 export const About: FC<Props> = ({ socialLinks }) => (
-  <FlexArticle>
+  <Main>
     <Image src="/images/me.jpg" alt="Me" />
     <Desciption>
-      <ArticleTitle>Me</ArticleTitle>
-      <p>
-        {
-          "Hi, i'm Daniel Brüggemann a Freelance Software developer from Nennhausen/Berlin Germany."
-        }
-      </p>
-      <ArticleTitle>Social</ArticleTitle>
-      <ul>
-        {socialLinks.map((link: SocialLink) => (
-          <li key={link.url}>
-            <Link to={link.url}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <Section>
+        <H2>Me</H2>
+        <p>
+          {
+            "Hi, i'm Daniel Brüggemann a Freelance Software developer from Nennhausen/Berlin Germany."
+          }
+        </p>
+      </Section>
+      <Section>
+        <H2>Social</H2>
+        <ul>
+          {socialLinks.map((link: SocialLink) => (
+            <li key={link.url}>
+              <Link to={link.url}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
     </Desciption>
-  </FlexArticle>
+  </Main>
 );
