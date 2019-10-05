@@ -10,9 +10,6 @@ export const Vita: FC<VitaProps> = ({ keySkills }) => (
   <main>
     <Article>
       <Section>
-        <p>Welcome to page 2</p>
-      </Section>
-      <Section>
         <h2>Key Skills</h2>
         <p>
           {keySkills.map(name => (
@@ -22,11 +19,11 @@ export const Vita: FC<VitaProps> = ({ keySkills }) => (
       </Section>
       <Section>
         <h2>References</h2>
-        <p>Welcome to page 2</p>
+        <p>List of projects i created.</p>
       </Section>
       <Section>
         <h2>Professional Experience</h2>
-        <p>Welcome to page 2</p>
+        <p>List of companies i worked for.</p>
       </Section>
     </Article>
   </main>
