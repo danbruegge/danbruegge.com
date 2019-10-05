@@ -5,7 +5,7 @@ import { H2 } from "components/H2";
 import { Section } from "components/Section";
 import { Link } from "components/Link";
 
-import { SocialLink, Props } from "./types";
+import { SocialLink, AboutProps } from "./types";
 
 const Main = styled.main`
   display: flex;
@@ -35,7 +35,7 @@ const Desciption = styled.article`
   flex: 3;
 `;
 
-export const About: FC<Props> = ({ socialLinks }) => (
+export const About: FC<AboutProps> = ({ socialLinks }) => (
   <Main>
     <Image src="/images/me.jpg" alt="Me" />
     <Desciption>

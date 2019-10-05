@@ -24,6 +24,9 @@ module.exports = {
           url: "https://www.xing.com/profile/Daniel_Brueggemann6/"
         }
       ]
+    },
+    vita: {
+      title: "Vita"
     }
   }
 };

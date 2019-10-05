@@ -1,27 +1,12 @@
 import React, { FC } from "react";
 import { graphql } from "gatsby";
 
+import { Metadata } from "types";
 import { Layout } from "components/Layout";
 import { About } from "components/About";
-import { Props as AboutProps } from "components/About/types";
+import { AboutPageProps } from "components/About/types";
 
-interface AboutPage extends AboutProps {
-  title: string;
-}
-
-interface Props {
-  data: {
-    site: {
-      siteMetadata: {
-        pages: {
-          about: AboutPage;
-        };
-      };
-    };
-  };
-}
-
-const AboutPage: FC<Props> = ({ data }) => {
+const AboutPage: FC<Metadata<AboutPageProps>> = ({ data }) => {
   const page = data.site.siteMetadata.pages.about;
 
   return (

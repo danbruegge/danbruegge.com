@@ -3,6 +3,12 @@ export interface SocialLink {
   url: string;
 }
 
-export interface Props {
+export interface AboutProps {
   socialLinks: SocialLink[];
+}
+
+export interface AboutPageProps {
+  about: AboutProps & {
+    title: string;
+  };
 }

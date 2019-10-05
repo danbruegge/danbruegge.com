@@ -1,12 +1,23 @@
 import React, { FC } from "react";
 
+import { Metadata } from "types";
 import { Layout } from "components/Layout";
 import { Vita } from "components/Vita";
 
-const VitaPage: FC = () => (
-  <Layout title="Vita">
-    <Vita />
-  </Layout>
-);
+interface Props {
+  vita: {
+    title: string;
+  };
+}
+
+const VitaPage: FC<Metadata<Props>> = ({ data }) => {
+  const page = data.site.siteMetadata.pages.vita;
+
+  return (
+    <Layout title={page.title}>
+      <Vita />
+    </Layout>
+  );
+};
 
 export default VitaPage;
