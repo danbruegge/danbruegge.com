@@ -4,9 +4,10 @@ import { Article } from "components/Article";
 import { Section } from "components/Section";
 
 import { Skill } from "./Skill";
+import { Project } from "./Project";
 import { VitaProps } from "./types";
 
-export const Vita: FC<VitaProps> = ({ keySkills }) => (
+export const Vita: FC<VitaProps> = ({ keySkills, projects }) => (
   <main>
     <Article>
       <Section>
@@ -18,12 +19,16 @@ export const Vita: FC<VitaProps> = ({ keySkills }) => (
         </p>
       </Section>
       <Section>
-        <h2>References</h2>
-        <p>List of projects i created.</p>
-      </Section>
-      <Section>
         <h2>Professional Experience</h2>
-        <p>List of companies i worked for.</p>
+        <p>
+          {projects.map(project => (
+            <Project
+              key={project.name}
+              name={project.name}
+              info={project.info}
+            />
+          ))}
+        </p>
       </Section>
     </Article>
   </main>

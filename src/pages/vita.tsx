@@ -11,7 +11,7 @@ const VitaPage: FC<Metadata<VitaPageProps>> = ({ data }) => {
 
   return (
     <Layout title={page.title}>
-      <Vita keySkills={page.keySkills} />
+      <Vita keySkills={page.keySkills} projects={page.projects} />
     </Layout>
   );
 };
@@ -26,6 +26,10 @@ export const query = graphql`
           vita {
             title
             keySkills
+            projects {
+              name
+              info
+            }
           }
         }
       }

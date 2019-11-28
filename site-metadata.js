@@ -39,6 +39,18 @@ module.exports = {
         "GraphQL",
         "NodeJS",
         "Contentful"
+      ],
+      projects: [
+        { name: "airberlin", info: "" },
+        { name: "denkwerk", info: "" },
+        { name: "mackevision", info: "" },
+        { name: "orgavision", info: "" },
+        { name: "telekom", info: "" },
+        { name: "vimcar", info: "" },
+        { name: "volkswagen", info: "" },
+        { name: "wittgruppe", info: "" },
+        { name: "zalando", info: "" },
+        { name: "zeitonline", info: "" }
       ]
     }
   }
