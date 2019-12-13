@@ -42,9 +42,17 @@ export const About: FC<AboutProps> = ({ socialLinks }) => (
       <Section>
         <H2>Me</H2>
         <p>
-          {
-            "Hi, i'm Daniel Brüggemann a Freelance Software developer from Nennhausen/Berlin Germany."
-          }
+          Hi, i&apos;m Daniel Brüggemann a Freelance Software developer from
+          Nennhausen/Berlin Germany.
+        </p>
+        <p>
+          In <b>2014</b> i started freelancing as a developer, since then i did
+          some great projects for companies like <strong>Telekom</strong>,&nbsp;
+          <strong>Volkswagen</strong> or <strong>Zalando</strong>.
+        </p>
+        <p>
+          I&apos;m always looking for opportunities to enhance myself and to
+          work with great people.
         </p>
       </Section>
       <Section>
