@@ -12,7 +12,8 @@ const typography: Typography = new Typography({
       padding: base.padding.mobile
     },
     "h1,h2,h3,h4,h5,h6": {
-      fontFamily: base.fontFamily.join(",")
+      fontFamily: base.fontFamily.join(","),
+      opacity: 0.75
     },
     ul: {
       marginLeft: "3rem"
