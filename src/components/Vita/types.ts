@@ -1,6 +1,7 @@
 export interface Project {
   name: string;
   info: string;
+  size: number;
 }
 
 export interface VitaProps {

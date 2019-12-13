@@ -41,16 +41,16 @@ module.exports = {
         "Contentful"
       ],
       projects: [
-        { name: "airberlin", info: "" },
-        { name: "denkwerk", info: "" },
-        { name: "mackevision", info: "" },
-        { name: "orgavision", info: "" },
-        { name: "telekom", info: "" },
-        { name: "vimcar", info: "" },
-        { name: "volkswagen", info: "" },
-        { name: "wittgruppe", info: "" },
-        { name: "zalando", info: "" },
-        { name: "zeitonline", info: "" }
+        { name: "telekom", info: "", size: 1 },
+        { name: "volkswagen", info: "", size: 1 },
+        { name: "zalando", info: "", size: 2.2 },
+        { name: "wittgruppe", info: "", size: 2.4 },
+        { name: "mackevision", info: "", size: 1 },
+        { name: "zeitonline", info: "", size: 2.4 },
+        { name: "airberlin", info: "", size: 2.4 },
+        { name: "orgavision", info: "", size: 2.4 },
+        { name: "vimcar", info: "", size: 2.4 },
+        { name: "denkwerk", info: "", size: 1 }
       ]
     }
   }
